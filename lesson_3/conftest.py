@@ -17,7 +17,7 @@ def browser():
         service = FirefoxService(executable_path=GeckoDriverManager().install())
         options = webdriver.FirefoxOptions()
         driver = webdriver.Firefox(service=service, options=options)
-    elif browser == "chrome":
+    else:
         service = ChromeService(executable_path=ChromeDriverManager().install())
         options = webdriver.ChromeOptions()
         driver = webdriver.Chrome(service=service, options=options)
